@@ -1,0 +1,94 @@
+@media (max-width: 75rem) {
+    .container{
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+    #home .box-container .w-img{
+        width: 30rem;
+        height: 15rem;
+    }
+}
+@media (max-width:51.25rem) {
+   header{
+    display: none;
+    }
+    .header{
+        position: absolute;
+    }
+    .navBar{
+        padding:0 1rem;
+        margin: 0;
+        flex-direction: column;
+        gap: 1rem;
+        transition: 1s linear;
+    }
+    .navBar .navBar__list{
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    #toggle{
+        display: block;
+        position: absolute;
+        left: 1rem;
+        font-size: 1.5rem;
+        top: .25rem;
+    }
+    #toggle.active i:last-child{
+        display: block;
+    }
+    #toggle.active i:first-child{
+        display: none;
+    }
+    .navBar.active{
+        height: 100vh;
+        transition: linear 1s;
+        padding-bottom: 1rem;
+    }
+    .navBar .navBar__list li,.navBar .navBar__list li a{
+        width: 100%;
+        display: block;
+    }
+    .navBar .navBar__list li:active .navBar{
+        height: 3rem;
+    }
+    #myWork .box-container .template .box-img{
+        flex: 0 0 calc(50% - 1rem);
+        max-width: calc(50% - 1rem);
+    }
+}
+@media (max-width: 33.75rem) {
+    #home .box-container .w-img{
+        width: 100%;
+        height: auto;
+    }
+    #intro .mySefl ,#skill .box-container .skill p{
+        width: 80%;
+    }
+    #home .box-container .w-img{
+        width: 100%;
+        height: auto;
+    }
+    #share .box-container{
+        width: 50%;
+        text-align: center;
+    }
+    #share .box-container p a{
+        white-space: pre-line;
+    }
+    #myWork{
+        width: 100%;
+    } 
+    #myWork .box-container .template .box-img{
+        height: 8rem;
+    }
+    footer .footer{
+        padding: unset;
+        padding: 2rem 1rem;
+    }
+}
+@media (max-width: 32.5rem){
+    html{
+        font-size: 90%;
+    }
+} 
